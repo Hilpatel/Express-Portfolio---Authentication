@@ -1,0 +1,41 @@
+<!-- // Name: Hil Patel
+// id: 301215094
+// fileName: services.ejs
+// Date: October 08, 2022 -->
+
+
+<!-- importing partial ejs files -->
+<%- include('../partials/header') %>
+<%- include('../partials/navbar') %>
+
+    <section class="serviceSection" id="serviceSection">
+        <h1 class="heading">
+            <span>My</span> Services
+        </h1>
+
+        <!-- mulitple display box for services -->
+        <div class="box-container">
+            <div class="box">
+                <i class="fas fa-laptop"></i>
+                <h3>Game Developement</h3>
+                <p> <%= serviceOne %> </p>
+            </div>
+            <div class="box">
+                <i class="fas fa-code"></i>
+                <h3>FullStack Developement</h3>
+                <p><%= serviceTwo %> </p>
+            </div>
+            <div class="box">
+                <i class="fab fa-codepen"></i>
+                <h3>Testing</h3>
+                <p><%= serviceThree %></p>
+            </div>
+            <div class="box">
+                <i class="fas fa-database"></i>
+                <h3>DBMS</h3>
+                <p><%= serviceFour %>  </p>
+            </div>
+        </div>
+    </section>
+
+    <%- include('../partials/footer') %>

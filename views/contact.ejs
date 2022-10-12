@@ -1,0 +1,48 @@
+<!-- // Name: Hil Patel
+// id: 301215094
+// fileName: contact.ejs
+// Date: October 08, 2022 -->
+
+
+<!-- importing partial ejs files -->
+<%- include('../partials/header') %>
+    <%- include('../partials/navbar') %>
+
+        <section class="contactSection" id="contactSection">
+
+            <h1 class="heading"> contact <span> me </span> </h1>
+
+            <div class="icons-container">
+
+                <!-- icons from font awesome -->
+                <div class="icons">
+                    <p><i class="fas fa-envelope"></i>Hilapatel17@gmail.com</p>
+
+                    <p><i class="fas fa-map"></i>Scarborough, ON</p>
+                </div>
+
+
+            </div>
+
+            <div class="row">
+                <!-- basic form -->
+                <form action="">
+
+                    <input type="text" placeholder="name" class="box">
+                    <input type="email" placeholder="email" class="box">
+                    <input type="number" placeholder="number" class="box">
+
+                    <textarea name="" placeholder="message" id="" cols="30" rows="10"></textarea>
+
+                    <input type="submit" class="btn" value="send message">
+
+                </form>
+
+
+            </div>
+
+
+
+        </section>
+
+        <%- include('../partials/footer') %>

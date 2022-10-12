@@ -1,0 +1,61 @@
+<!-- // Name: Hil Patel
+// id: 301215094
+// fileName: projects.ejs
+// Date: October 08, 2022 -->
+
+
+<!-- importing partial ejs files -->
+<%- include('../partials/header') %>
+    <%- include('../partials/navbar') %>
+
+        <section class="projectSection">
+            <h1 class="heading"> <span>my</span> Projects</h1>
+
+            <div class="box-container">
+                <!-- mulitiple display box for projects -->
+                <div class="box">
+                    <img src="images/img-1.jpg" alt="">
+                    <h3> Project-1</h3>
+                    <p>Actually, this is my assignment in the second semester, it’s a table creation website in
+                        which when we enter rows and columns, a table of rows and columns will be created. I used
+                        HTML,CSS and JS.</p>
+                    <div class="icons">
+                        <a href="https://github.com/Hilpatel/Project-1" class="fas fa-link"></a>
+
+                    </div>
+                </div>
+
+                <div class="box">
+                    <img src="images/img-2.jpg" alt="">
+                    <h3> Project-2 </h3>
+                    <p>It is a photo viewer gallery using HTML, CSS and JS. When the user clicks on a picture and it
+                        opens a window containing a zoomed version of the image and also user can add and remove the
+                        picture to favourites. A maximum of 5 pics can be added to the favourites. After that, a message
+                        is displayed to remove at least 1 favourite picture.</p>
+                    <div class="icons">
+                        <a href="https://github.com/Hilpatel/Project-2" class="fas fa-link"></a>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <img src="images/img-3.jpg" alt="">
+                    <h3>Project-3</h3>
+                    <p>it is a bug smasher game using HTML, CSS and JS. When the player clicks on the bug, his score
+                        will increase and the speed of the bug will also increase. And the players can also speed
+                        reboot.</p>
+                    <div class="icons">
+                        <a href="https://github.com/Hilpatel/Project-3" class="fas fa-link"></a>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <img src="images/img-4.jpg" alt="">
+                    <h3> Term-Project </h3>
+                    <p>I created this project at the end of my semester 1. I made this website with HTML and CSS for a
+                        real estate agent so that he can sell properties and people can contact him for inquiries.</p>
+                    <div class="icons">
+                        <a href="https://github.com/Hilpatel/Term-Project" class="fas fa-link"></a>
+                    </div>
+        </section>
+
+        <%- include('../partials/footer') %>
