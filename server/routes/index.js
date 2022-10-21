@@ -43,4 +43,8 @@ router.get("/contact", function (req, res, next) {
   res.render("contact", { title: "this is Contact" });
 });
 
+router.get("/login", function (req, res, next) {
+  res.render("Login");
+});
+
 module.exports = router;

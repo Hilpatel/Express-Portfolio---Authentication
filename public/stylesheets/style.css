@@ -441,7 +441,90 @@ section {
 }
 
 
+/* Login Section */
 
+
+
+.loginSection .icons-container {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    padding-bottom: 2rem;
+}
+
+.loginSection .icons-container .icons {
+    flex: 1 1 25rem;
+    text-align: center;
+    padding: 2rem;
+    background: #fff;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    border-radius: .5rem;
+}
+
+.loginSection .icons-container .icons i {
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    background: var(--main-color);
+    color: #333;
+    border-radius: 50%;
+}
+
+.loginSection .icons-container .icons h4 {
+    color: #111;
+    font-size: 2rem;
+    padding: .5rem 0;
+    padding-top: 1rem;
+}
+
+.loginSection .icons-container .icons p {
+    color: #666;
+    font-size: 1.7rem;
+    text-transform: lowercase;
+}
+
+.loginSection .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.loginSection .row form {
+    flex: 1 1 55rem;
+    background: #fff;
+    padding: 0 2rem;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    border-radius: .5rem;
+}
+
+.loginSection .row form .box, .loginSection .row form textarea {
+    width: 100%;
+    border-bottom: .1rem solid #333;
+    color: #333;
+    text-transform: none;
+    font-size: 1.7rem;
+    padding: 1rem 0;
+    margin: 1rem 0;
+}
+
+.loginSection .row form .box:focus, .loginSection .row form textarea:focus {
+    border-color: var(--main-color);
+}
+
+.loginSection .row form .box::placeholder, .loginSection .row form textarea::placeholder {
+    text-transform: capitalize;
+}
+
+.loginSection .row form textarea {
+    height: 20rem;
+    resize: none;
+}
+
+.loginSection .row form .btn {
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+}
 
 
 

@@ -1,0 +1,42 @@
+<!-- // Name: Hil Patel
+// id: 301215094
+// fileName: contact.ejs
+// Date: October 08, 2022 -->
+
+<!-- importing partial ejs files -->
+<%- include('./partials/header.ejs') %> <%- include('./partials/navbar') %>
+
+<section class="loginSection" id="loginSection">
+  <h1 class="heading">Login</h1>
+
+  <!-- Message Area -->
+
+  <div class="row">
+    <!-- basic Login form -->
+    <form method="post">
+      <input
+        type="text"
+        id="username"
+        name="username"
+        placeholder="enter your email"
+        class="box"
+        required
+      />
+
+      <input
+        type="password"
+        name="password"
+        id="password"
+        placeholder="enter your password"
+        class="box"
+        required
+      />
+
+      <input type="submit" class="btn" value="Login" />
+      <a href="/" class="btn">Cancel</a>
+
+    </form>
+  </div>
+</section>
+
+<%- include('./partials/footer') %>
