@@ -1,3 +1,8 @@
+// Name: Hil Patel
+// id: 301215094
+// fileName: contacts.js
+// Date: October 26, 2022 
+
 let express = require('express');
 let router = express.Router();
 
@@ -50,6 +55,7 @@ module.exports.DisplayEditPage = (req,res,next)=>{
         }
         else{
             // Show the edit view
+            console.log(id);
             res.render('contacts/edit',{contact:contactToEdit});
         }
     });

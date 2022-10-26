@@ -1,3 +1,8 @@
+// Name: Hil Patel
+// id: 301215094
+// fileName: contacts.js
+// Date: October 26, 2022 
+
 let mongoose = require('mongoose');
 
 let contact_list = new mongoose.Schema({

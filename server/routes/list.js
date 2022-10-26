@@ -1,3 +1,8 @@
+// Name: Hil Patel
+// id: 301215094
+// fileName: list.js
+// Date: October 26, 2022
+
 let express = require('express');
 let router = express.Router();
 let mongoose = require('mongoose');
@@ -27,11 +32,11 @@ router.get('/add',performAuth, listController.DisplayAddPage)
 router.post('/add',performAuth, listController.AddPage)
 
 // get router for edit list page
-router.get('/edit/:id', performAuth,listController.DisplayEditPage);
+router.get('/edit/:id/editBook', performAuth,listController.DisplayEditPage);
 
 // post route for the edit page to show the updated list
 
-router.post("/edit/:id",performAuth, listController.EditPage);
+router.post("/edit/:id/editBook",performAuth, listController.EditPage);
 
 // get route to perform deletion of a contact info
 

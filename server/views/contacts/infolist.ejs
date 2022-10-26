@@ -1,3 +1,8 @@
+<!-- // Name: Hil Patel
+// id: 301215094
+// fileName: infolist.ejs
+// Date: October 26, 2022 -->
+
 <%- include('../partials/header.ejs') %>
 
 <%- include('../partials/navbar') %>
@@ -31,7 +36,7 @@
                             <%= ContactList[count].email %>
                         </td>
                         <td>
-                            <a href="/contactlist/edit/<%= ContactList[count]._id %>" class="editBtn">edit</a>
+                            <a href="/contactlist/edit/<%= ContactList[count]._id %>/editBook" class="editBtn">edit</a>
                         </td>
                         <td>
                             <a href="/contactlist/delete/<%= ContactList[count]._id %>" class="editBtnDng">remove</a>

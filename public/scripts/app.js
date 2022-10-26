@@ -1,7 +1,7 @@
 // Name: Hil Patel
 // id: 301215094
-// fileName: error.ejs
-// Date: October 08, 2022
+// fileName: app.js
+// Date: October 26, 2022
 
 
 // toggle for menu bars to cross

@@ -1,3 +1,8 @@
+// Name: Hil Patel
+// id: 301215094
+// fileName: user.js
+// Date: October 26, 2022 
+
 let mongoose = require('mongoose');
 const passport = require('passport');
 let passprtLocalMongoose = require('passport-local-mongoose');
