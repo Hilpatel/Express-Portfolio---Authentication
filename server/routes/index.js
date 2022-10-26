@@ -4,47 +4,44 @@
 // Date: October 08, 2022
 
 
-var express = require("express");
-var router = express.Router();
+// ------------------------------
+let express = require("express");
+let router = express.Router();
+let app = express();
+
+let controllers = require('../controllers/index');
 
 /* GET home page. */
-router.get("/", function (req, res, next) {
-  res.render("index", {
-    indexIntro:
-      " I enjoy trying new things and am looking for a position in information technology that will challenge me to broaden my practical knowledge.",
-  });
-});
+router.get("/",controllers.HomePage );
 
 /* GET about page. */
-router.get("/about", function (req, res, next) {
-  res.render("about", {
-    aboutIntro:
-      "I am from India. Currently, I am a student. I have a variety of problem-solving skills, including the ability to evaluate issues and discover solutions. My strengths include being flexible, dependable, and having superb management abilities.",
-  });
-});
+router.get("/about",controllers.AboutPage );
 
 /* GET projects page. */
-router.get("/projects", function (req, res, next) {
-  res.render("projects", { title: "this is Projects" });
-});
+router.get("/projects",controllers.ProjectsPage );
 
 /* GET services page. */
-router.get("/services", function (req, res, next) {
-  res.render("services", { 
-    serviceOne: "I make games both alone and with the Community that inspire fresh ideas and draw players.",
-    serviceTwo:"Developing full-stack web applications which processed, analyzed, and rendered data visually with Managed time-sensitive updates, including content changes and database upgrades.",
-    serviceThree:"Building Flexible Code with Proper Descriptions for System Testing",
-    serviceFour:"Complex query performance. Data Extraction and Database Management"
-   });
-});
+router.get("/services",controllers.ServiesPage );
 
 /* GET contact page. */
-router.get("/contact", function (req, res, next) {
-  res.render("contact", { title: "this is Contact" });
-});
+router.get("/contact",controllers.ContactsPage);
 
-router.get("/login", function (req, res, next) {
-  res.render("Login");
-});
+// get route for displaying Login page.
+router.get('/login', controllers.DisplayLoginPage )
+
+// post route for Processing Login page
+router.post('/login', controllers.ProcessLoginPage)
+
+
+// get route for displaying Login page.
+router.get('/login', controllers.DisplayLoginPage )
+
+// post route for Processing Login page
+router.post('/login', controllers.ProcessLoginPage)
+
+
+// GET to preform logout
+router.post('/logout', controllers.ProcessLoginPage)
+
 
 module.exports = router;

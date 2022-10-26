@@ -1,0 +1,47 @@
+<%- include('../partials/header.ejs') %>
+
+<%- include('../partials/navbar') %>
+
+<section class="listSection" id="listSection">
+    <h1 class="heading"> Businness Contact List </h1>
+    <span></span>
+    <a href="/contactlist/add" class="editbtn" role="button"><input type="button" style="margin-top:10px; margin-bottom:10px;" class="editBtn" value="Add a Contact"></a>
+    <a href="/" class="editbtn" role="button"><input type="button" style="margin-top:10px; margin-bottom:10px;" class="editBtn" value="LogOut"></a>
+    
+    <table>
+        <div class="tbody">
+            <tbody>
+                
+                <tr>
+                    <th>Name</th>
+                    <th>Number</th>
+                    <th>Email</th>
+                    <th></th>
+                </tr>
+
+                <% for(let count=0; count < ContactList.length; count++) { %>
+                    <tr>
+                        <td>
+                            <%= ContactList[count].contactName %>
+                        </td>
+                        <td>
+                            <%= ContactList[count].contactNumber %>
+                        </td>
+                        <td>
+                            <%= ContactList[count].email %>
+                        </td>
+                        <td>
+                            <a href="/contactlist/edit/<%= ContactList[count]._id %>" class="editBtn">edit</a>
+                        </td>
+                        <td>
+                            <a href="/contactlist/delete/<%= ContactList[count]._id %>" class="editBtnDng">remove</a>
+                        </td>
+                    </tr>
+                    <% } %>
+            </tbody>
+        </section>
+    </table>
+</section>
+
+
+    <%- include('../partials/footer') %>

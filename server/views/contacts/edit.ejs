@@ -1,0 +1,27 @@
+<%- include('../partials/header.ejs') %>
+
+<%- include('../partials/navbar') %>
+
+<section class="listSection">
+    <h1 class="heading"> edit <%= contact.contactName%>'s  Contact </h1>
+
+    <div class="container">
+        <form method="post" action="">
+            <label style="font-size: 1.5rem;" for="contactName">Name</label>
+            <input type="text" id="contactName" name="contactName" placeholder="Your name.." value="<%= contact.contactName %> ">
+
+            <label style="font-size: 1.5rem;" for="contactNumber">Number</label>
+            <input type="text" id="contactNumber" name="contactNumber" placeholder="Your number" value="<%= contact.contactNumber %> ">
+
+            <label style="font-size: 1.5rem;" for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Your email..." value="<%= contact.email %> ">
+
+            <button style="font-size: 1.5rem;" class="editBtn " type="submit">Edit</button>
+
+            <a style="font-size: 1.5rem;" href="/contactlist" class="editBtn">Cancel</a>
+
+            
+        </form>
+</section>
+
+    <%- include('../partials/footer') %>
